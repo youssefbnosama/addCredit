@@ -1,0 +1,138 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    background-image: url(images/bg-main-desktop.png);
+    height: 100vh;
+    width: 35%;
+}
+
+.second {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    outline: none;
+    border: 1px solid hsl(279, 6%, 55%);
+    border-radius: 5px;
+    height: 33px;
+}
+
+label {
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+#cardName,
+#cardNumber {
+    display: block;
+    width: 50%;
+    margin: 0 auto 30px auto;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#month,
+#year {
+    width: 10%;
+}
+
+
+
+#cvc {
+    margin-left: 20px;
+}
+
+#submit {
+    display: block;
+    margin: 30px auto;
+    width: 40%;
+    height: 30px;
+    background-color: hsl(278, 68%, 11%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.frontCardContainer {
+    position: absolute;
+    left: 16%;
+    top: 25%;
+    background-image: url(images/bg-card-front.png);
+    background-size: contain;
+    width: 235px;
+    height: 129px;
+    border-radius: 5px;
+    color: white;
+}
+
+.frontcard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.serial {
+    top: 55%;
+    left: 13%;
+    position: absolute;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.namer {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    font-size: 10px;
+}
+
+.date {
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    font-size: 8px;
+}
+
+.secondCardContainer {
+    position: absolute;
+    left: 22%;
+    top: 55%;
+    background-image: url(images/bg-card-back.png);
+    background-size: contain;
+    width: 239.1px;
+    height: 130.8px;
+    border-radius: 5px;
+    color: white;
+}
+
+.secondcard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#cvcNumber {
+    position: absolute;
+    top: 42%;
+    left: 75%;
+    color: black;
+}

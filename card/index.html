@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="frontCardContainer">
+        <div class="frontcard">
+            <div class="serial" id="serial">0000 0000 0000 0000</div>
+            <div class="namer" id="namer">
+                FELICA LEIRE
+            </div>
+            <div class="date"><span id="cardMonth">MM</span>/ <span id="cardYear">YY</span></div>
+        </div>
+    </div>
+    <div class="secondCardContainer">
+        <div class="secondcard">
+            <span id="cvcNumber">###</span>
+        </div>
+    </div>
+    <div class="first"></div>
+    <div class="second">
+        <form action="">
+            <label for="cardName" style="margin-left: 40%;">CARDHOLDER NAME</label>
+            <input type="text" id="cardName" maxlength="15">
+            <label for="cardNumber" style="margin-left: 40%;">CARD NUMDER</label>
+            <input type="text" id="cardNumber" maxlength="16">
+            <div class="labels" style="margin-left: 25%;">
+                <label for="">EXP DATE(MM/YY)</label>
+                <label for="cvc">CVC</label>
+            </div>
+            <div class="cvvinp" style="margin-left: 25%;">
+                <input type="text" id="month" maxlength="2">
+                <input type="text" id="year" maxlength="2">
+                <input type="text" id="cvc" maxlength="3">
+            </div>
+            <button type="submit" id="submit">Confirm</button>
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
